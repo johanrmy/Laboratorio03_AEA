@@ -1,0 +1,17 @@
+﻿<Window x:Class="Laboratorio03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laboratorio03"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnDataRead" Content="DataRead" HorizontalAlignment="Left" Margin="477,74,0,0" VerticalAlignment="Top" FontSize="18" Click="btnDataRead_Click"/>
+        <Button x:Name="btnDataTable" Content="DataTable" HorizontalAlignment="Left" Margin="235,74,0,0" VerticalAlignment="Top" FontSize="18" Click="btnDataTable_Click"/>
+        <DataGrid x:Name="dgStudents" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="177,166,177,41"/>
+        <Button x:Name="btnBuscarNombre" Content="Buscar" HorizontalAlignment="Left" Margin="492,128,0,0" VerticalAlignment="Top" FontSize="16" Click="btnBuscarNombre_Click"/>
+        <TextBox x:Name="txtboxNombre" HorizontalAlignment="Left" Margin="235,130,0,0" TextWrapping="Wrap" Text="Buscar por nombre" VerticalAlignment="Top" Width="194" FontSize="16" TextChanged="txtboxNombre_TextChanged"/>
+
+    </Grid>
+</Window>
